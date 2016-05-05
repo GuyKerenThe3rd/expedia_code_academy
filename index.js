@@ -1,4 +1,3 @@
+#!/usr/bin/env node
 var moment = require('moment');
-
-
-console.log('London:'+ moment().format("HH:mm"));
+console.log('London:'+ moment("PST").format("HH:mm"));
