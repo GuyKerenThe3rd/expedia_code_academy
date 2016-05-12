@@ -8,5 +8,5 @@ var locationToTimezone  = {'London':'Europe/London'
     ,'Berlin':'Europe/Berlin'};
 
 for (zone in locationToTimezone) {
-    console.log(zone + ': ' + moment().tz(locationToTimezone[zone]).format("HH:mm dddd"));
+    console.log(zone + '-> ' + moment().tz(locationToTimezone[zone]).format("HH:mm dddd"));
 }
