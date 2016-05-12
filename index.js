@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 var moment = require('moment-timezone');
 
-var locationToTimezone  = {'LA':'America/Los_Angeles'
-    ,'LONDON':'Europe/London'
-    ,'NY':'America/New_York'
-    ,'BERLIN':'Europe/Berlin'};
+var locationToTimezone  = {'London':'Europe/London'
+    ,'New-York':'America/New_York'
+    ,'Seattle':'America/Boise'
+    ,'San-Francisco':'America/Boise'
+    ,'Berlin':'Europe/Berlin'};
 
 for (zone in locationToTimezone) {
-    console.log(zone + ': ' + moment().tz(locationToTimezone[zone]).format("HH:mm"));
+    console.log(zone + ': ' + moment().tz(locationToTimezone[zone]).format("HH:mm dddd"));
 }
