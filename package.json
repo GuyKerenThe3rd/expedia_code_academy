@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "lodash": "^4.11.1",
-    "moment": "^2.13.0"
+    "module_name": "^1.0.0",
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.5.4"
   },
   "devDependencies": {},
   "scripts": {
